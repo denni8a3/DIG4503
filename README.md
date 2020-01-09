@@ -1,2 +1,2 @@
 # DIG4503
-Rapid app
+LAB 0 - Rapid app
