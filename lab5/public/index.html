@@ -10,7 +10,7 @@
                 // Find the element with 'id="score"'
                 let element = document.querySelector("#id");
 
-                fetch("/id/" + element.value)
+                fetch("http://localhost/id/" + element.value)
                     .then((res) => {
                         // Parse the string into a JavaScript object and return it
                         return res.json();
@@ -37,7 +37,7 @@
                 // Find the element with 'id="name"'
                 let element = document.querySelector("#name");
 
-                fetch("/api/name/" + element.value)
+                fetch("http://localhost/name/" + element.value)
                     .then((res) => {
                         // Parse the string into a JavaScript object and return it
                         return res.json();
@@ -80,7 +80,7 @@
     </script>
     <h2>ID</h2>
     <form onsubmit="pokeId(event)">
-        <input id="id" type="number">
+        <input id="id" type="text">
         <button>Submit</button>
     </form>
     <h2>Name</h2>
