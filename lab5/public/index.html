@@ -1,0 +1,95 @@
+<html>
+
+<body>
+    <script>
+        function pokeId(event) {
+
+                // Stop (prevent) the 'default' form action
+                event.preventDefault();
+
+                // Find the element with 'id="score"'
+                let element = document.querySelector("#id");
+
+                fetch("/id/" + element.value)
+                    .then((res) => {
+                        // Parse the string into a JavaScript object and return it
+                        return res.json();
+                    })
+                    .then((processed) => {
+
+                        // Find the element with 'id="reportingArea"'
+                        let reporting = document.querySelector("#reportingArea");
+
+                        // Does the 'processed' object have a property called 'error'?
+                        if (processed.error) {
+                            reporting.innerHTML = processed.error;
+                        } else {
+                            reporting.innerHTML = processed.name;
+                        }
+
+                    });
+            }
+            function pokeName(event) {
+
+                // Stop (prevent) the 'default' form action
+                event.preventDefault();
+
+                // Find the element with 'id="name"'
+                let element = document.querySelector("#name");
+
+                fetch("/api/name/" + element.value)
+                    .then((res) => {
+                        // Parse the string into a JavaScript object and return it
+                        return res.json();
+                    })
+                    .then((processed) => {
+
+                        // Find the element with 'id="reportingArea"'
+                        let reporting = document.querySelector("#reportingArea");
+
+                        // Does the 'processed' object have a property called 'error'?
+                        if (processed.error) {
+                            reporting.innerHTML = processed.error;
+                        } else {
+                            reporting.innerHTML = processed.name;
+                        }
+
+                    });
+            }
+            /*function createMovie(event) {
+                // Stop (prevent) the 'default' form action
+                event.preventDefault();
+
+                // Find the element with 'id="movieName"'
+                let name = document.querySelector("#movieName");
+                // Find the element with 'id="movieScore"'
+                let score = document.querySelector("#movieScore");
+
+                fetch("/api/movies/" + name.value + "/" + score.value, {
+                    // Set the 'method' to POST
+                    "method": "post"
+                }).then((res) => {
+                    // Parse the string into a JavaScript object and return it
+                    return res.json();
+                }).then((processed) => {
+                    console.log(processed);
+                });
+
+
+            }*/
+    </script>
+    <h2>ID</h2>
+    <form onsubmit="pokeId(event)">
+        <input id="id" type="number">
+        <button>Submit</button>
+    </form>
+    <h2>Name</h2>
+    <form onsubmit="pokeName(event)">
+        <input id="name" type="text">
+        <button>Submit</button>
+    </form>
+    <h2>Reporting</h2>
+    <div id="reportingArea"></div>
+</body>
+
+</html>
