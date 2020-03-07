@@ -54,7 +54,7 @@ App.get("/movies/year/:year", (req, res) => {
 
     // findTitle() will return a Promise
     // Once it finishes, send the response
-    database.findTitle(req.params.title).then((movie) => {
+    database.findTitle(req.params.year).then((movie) => {
 
         // If a movie was not found, it will be null
         if (movie != null) {

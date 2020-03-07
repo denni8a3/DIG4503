@@ -14,8 +14,8 @@ class YearSearch extends React.Component {
         }
 
         // Look for movies based on the year
-        fetch("http://localhost:80/movies/year/" + year)
-        .then((res) => { return res.json() })
+        fetch("http://localhost:80/movies/year/" + year.value)
+        .then((res) => { return res.json(); })
         .then((processed) => {
             // Call the callback function given to the class component
             this.props.callback(processed);

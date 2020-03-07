@@ -89,7 +89,7 @@ class Database {
             // Use toArray() to convert the result back into an array
             // (toArray() returns a Promise. This will resolve in the server code.)
             // 
-            return this.collection.find({"year": year}).limit(100).toArray();
+            return this.collection.findOne({"year": year}).limit(100).toArray();
             
         } 
         

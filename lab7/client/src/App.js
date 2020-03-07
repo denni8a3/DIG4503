@@ -15,11 +15,12 @@ class App extends React.Component {
   // Update the internal state.table
   // (This is called from YearSearch.)
   setResultsTable = (processed) => {
+    console.log(processed);
     this.setState({"table": processed});
   }
 
   // Render the results table
-  createResultsTable() {
+ /* createResultsTable() {
 
     return (
       <table>
@@ -39,12 +40,12 @@ class App extends React.Component {
     );
 
   }
-
+*/
   render() {
     return (
       <div>
         <YearSearch callback={this.setResultsTable} />
-        {this.createResultsTable()}
+       
       </div>
     );
   }
