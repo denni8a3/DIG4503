@@ -20,8 +20,8 @@ class App extends React.Component {
   }
 
   // Render the results table
- /* createResultsTable() {
-
+ createResultsTable() {
+    console.log("here");
     return (
       <table>
         <tbody>
@@ -40,7 +40,7 @@ class App extends React.Component {
     );
 
   }
-*/
+
   render() {
     return (
       <div>

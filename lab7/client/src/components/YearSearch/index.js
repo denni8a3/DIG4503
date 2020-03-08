@@ -10,7 +10,7 @@ class YearSearch extends React.Component {
         // Test if year is an empty string
         // If so, change it to a value
         if(year.length === 0) {
-            year = "0";
+            year = "2020";
         }
 
         // Look for movies based on the year

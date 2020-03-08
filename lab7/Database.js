@@ -38,7 +38,7 @@ class Database {
             this.connection = connection;
         
             // From the connection, select a database "DIG4503-78"
-            let database = connection.db("DIG4503-77");
+            let database = connection.db("DIG4503-78");
 
             // From the database, select a collection "Movies"
             // Save this object into something that can be accessed throughout the class
@@ -89,7 +89,7 @@ class Database {
             // Use toArray() to convert the result back into an array
             // (toArray() returns a Promise. This will resolve in the server code.)
             // 
-            return this.collection.findOne({"year": year}).limit(100).toArray();
+            return this.collection.find({"year": year}).limit(100).toArray();
             
         } 
         
