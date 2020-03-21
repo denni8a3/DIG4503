@@ -1,0 +1,53 @@
+cd documents
+cd GitHub
+cd DIG4503
+cd DIG4503
+npx create-next-app lab8
+npm install json-pokemon
+
+
+Remove functional component code from pg index.js
+mkdir components in lab8 mkdir api in pgs dir
+mkdir pokemon in api and inside tht mkdir for name and index
+in name and id make corresponding .js files
+
+
+"[name].js"
+import getPokemon from 'json-pokemon/getPokemon';
+
+export default (req, res) => {
+    
+    let result = {"error": "Could not find name."};
+
+    let pokemon = getPokemon.getPokemonByName(req.query.name);
+
+    if(pokemon !== null) {
+        result = pokemon;
+    }
+
+    res.json(result);
+}
+
+"[id].js"
+import getPokemon from 'json-pokemon/getPokemon';
+
+export default (req, res) => {
+    
+    let result = {"error": "Could not find id."};
+
+    const id = parseInt(req.query.id);
+
+    let pokemon = getPokemon.getPokemonById(id);
+
+    if(pokemon !== null) {
+        result = pokemon;
+    }
+
+    res.json(result);
+}
+
+
+
+PART 2
+
+go to the lab6
