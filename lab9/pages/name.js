@@ -39,7 +39,7 @@ getName() {
             <div>
 
                 <Head>
-                    <title>Choose A Pokemon!</title>
+                    <title>Choose A Pokemon name!</title>
                 </Head>
                 <div className={styles.name}>
 

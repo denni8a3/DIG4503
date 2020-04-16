@@ -14,7 +14,7 @@ class Type extends React.Component {
         // 
         // Based on the name, fetch using the server's
         //  request parameter.
-        fetch("/api/pokemon/type/" + typeList.value)
+        fetch("/api/pokemon/typeList/" + typeList.value)
             .then((res) => { return res.json(); })
             .then((processed) => {
 

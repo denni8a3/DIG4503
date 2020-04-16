@@ -37,7 +37,7 @@ class Id extends React.Component {
             <div>
 
                 <Head>
-                    <title>Choose your Pokemon!</title>
+                    <title>Choose your Pokemon Id!</title>
                 </Head>
                 <div className={styles.id}>
 
