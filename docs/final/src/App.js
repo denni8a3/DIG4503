@@ -8,7 +8,8 @@ class App extends React.Component {
 
     return (
 
-      <HomePage firstName="Maurice" />
+      <HomePage firstName="Got it covered" />
+      
     );
   }
 }

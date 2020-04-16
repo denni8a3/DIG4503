@@ -2,7 +2,7 @@ import React from "react";
 class HomePage extends React.Component {
 
     render() {
-        return (
+        return(
             <p>{this.props.firstName}</p>
         );
     }
