@@ -1,0 +1,138 @@
+/*link management*/
+a:link {
+  color: rgb(177, 170, 170);
+  text-decoration: none;
+}
+
+a:visited {
+  color: rgba(115, 40, 138, 0.801);
+}
+
+a:hover {
+  background-color: rgba(71, 216, 241, 0.445);
+}
+body{
+  background-color: rgba(12, 134, 204, 0.678);
+}
+img  {
+  transform: rotate(90deg);
+  width: 40%;
+  height: auto;
+  position: right;
+  display: block;
+}
+.cert{
+  background-color: rgba(28, 185, 224, 0.5);
+}
+@media screen and (max-width: 600px) {
+  .grid {
+    display: grid;
+    grid-template-columns: auto;
+    background-color: rgba(28, 185, 224, 0.5);
+    grid-gap: 10px;
+  }
+
+  .par {
+    margin-top: 50px;
+    text-align: center !important;
+    padding: 10px;
+  }
+
+  .start {
+    text-align: justify !important;
+    padding: 10px;
+  }
+
+  .top {
+    margin-top: 10px;
+    padding: 10px;
+  }
+  .certifi h3{
+  background-color: rgba(28, 185, 224, 0.5);
+  margin:10px;
+  text-align: center;
+}
+
+ 
+}
+
+@media screen and (min-width: 500px) {
+
+  /*background nav*/
+  nav {
+    margin-bottom: 10px;
+    
+   
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: rgba(12, 134, 204, 0.5);
+    grid-gap: 10px;
+  }
+
+  .par {
+    grid-column: 1/4;
+    text-align: justify !important;
+    padding: 90px;
+    
+  }
+
+  .start {
+    grid-column: 1/4;
+    text-align: justify !important;
+    padding: 10px;
+  }
+
+  .top {
+    grid-column: 1/4;
+    margin-top: 24px;
+    padding: 10px;
+  }
+  .certifi h3{
+  background-color: rgba(28, 185, 224, 0.5);
+  margin:10px;
+  text-align: center;
+}
+
+}
+
+.grid-item {
+  background-color: rgba(24, 23, 23, 0.5);
+  border: 1px solid rgb(12, 12, 12);
+  font-size: 25px;
+  padding: 90px;
+  color: white;
+  text-align: center;
+}
+.certgrid{
+  background-color: rgba(26, 87, 202, 0.5);
+  display: grid;
+  grid-template-columns : 1fr 1fr 1fr;
+}
+.certifi h3{
+  background-color: rgba(28, 185, 224, 0.5);
+  margin:10px;
+  text-align: center;
+}
+.langgrid{
+  display: grid;
+  grid-template-columns : 1fr 1fr;
+}
+.lang{
+margin:10px;
+}
+.lang p{
+  
+  text-align: center;
+ 
+}
+.infogrid{
+  background-color: rgba(26, 87, 202, 0.5);
+  display: grid;
+  grid-template-columns : 1fr 1fr;
+}
+.info{
+  margin:10px;
+}
